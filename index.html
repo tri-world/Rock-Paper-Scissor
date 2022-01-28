@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RockPaperScissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body><br><br>
+  <h1 id="gameStarter" style="display: flex; justify-content: center; align-items: center;  font-size: 20px;  margin: 10px;"></h1>
+  <div class="inoutContainer">
+  <label for="input">NoOfTurns: </label>
+  <input type="number" id="input">
+  <button id="play" style="color: white; height: 30px; width: 40px; border-radius: 10%; background-color: olivedrab; margin-left: 20px;">Play</button>
+  </div>
+  <br><br><br>
+  <div class="inoutContainer">
+    <button style="margin: 10px; background-color: maroon; color: white; width: 70px; height: 70px; border-radius: 30%;" id="rock" >Rock</button>
+    <button style="margin: 10px; background-color: black; color: white; width: 70px; height: 70px; border-radius: 30%;" id="paper">Paper</button>
+    <button style="margin: 10px; background-color: red; width: 70px; color: white; height: 70px; border-radius: 30%;" id="scissors">Scissor</button>
+
+    </div>
+    <br><br>
+    <div class="Container">
+    <p id="gr">Game Result: </p>
+    <br>
+    <p id="tl">Turns Left: </p>
+
+    <br>
+    <p >ComputerPoint: </p>
+    <p id="cp"></p>
+    <br>
+    <p >UserPoint: </p>
+    <p id="userp"></p>
+
+    <br>
+    <p id="cs">Computer Select: </p>
+    <br><br>
+    <p id="rr">Round Result: </p>
+      </div>
+</body>
+<script  src="script.js" defer></script>
+</html>
