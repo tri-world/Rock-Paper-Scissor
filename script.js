@@ -4,6 +4,17 @@ const selectRock = document.getElementById("rock");
 const selectPaper = document.getElementById("paper");
 const selectScissors=  document.getElementById("scissors");
 
+document.getElementById("reset").addEventListener("click",()=>{
+    noOfTurns.value="";
+    document.getElementById("gr").innerText="";
+    document.getElementById("tl").innerText="";
+    document.getElementById("cp").innerText="";
+    document.getElementById("userp").innerText="";
+    document.getElementById("cs").innerText="";
+    document.getElementById("rr").innerText="";
+    
+})
+
 playBtn.addEventListener("click",function (){
     let turn = Number(noOfTurns.value);
     if(turn<=0){
@@ -22,6 +33,9 @@ playBtn.addEventListener("click",function (){
     let userPoint = 0;
     // selecting Rock as user choice/////
     selectRock.addEventListener("click",function(){
+        if(noOfTurns.value===0){
+            document.getElementById("rr").innerText="";
+        }
         document.getElementById("gameStarter").textContent="";
         if(turn>0){
             selectRock.textContent= "rock selected";
@@ -36,12 +50,21 @@ playBtn.addEventListener("click",function (){
                     if(turn===1){
                         if(computerPoint>userPoint){
                             document.getElementById("gr").textContent="computer Won the Match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else if(computerPoint==userPoint){
                             document.getElementById("gr").textContent="TIE match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else{
                             document.getElementById("gr").textContent="You Won!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                     }
                     turn--;
@@ -60,12 +83,21 @@ playBtn.addEventListener("click",function (){
                     if(turn===1){
                         if(computerPoint>userPoint){
                             document.getElementById("gr").textContent="computer Won the Match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else if(computerPoint==userPoint){
                             document.getElementById("gr").textContent="TIE match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else{
                             document.getElementById("gr").textContent="You Won!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                     }
                     turn--;
@@ -83,12 +115,21 @@ playBtn.addEventListener("click",function (){
                     if(turn===1){
                         if(computerPoint>userPoint){
                             document.getElementById("gr").textContent="computer Won the Match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else if(computerPoint==userPoint){
                             document.getElementById("gr").textContent="TIE match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else{
                             document.getElementById("gr").textContent="You Won!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                     }
                     turn--;
@@ -102,6 +143,9 @@ playBtn.addEventListener("click",function (){
         }
     }) // select paper as user Choice///
     selectPaper.addEventListener("click",function(){
+        if(noOfTurns.value===0){
+            document.getElementById("rr").innerText="";
+        }
         document.getElementById("gameStarter").textContent="";
         if(turn>0){
             selectPaper.textContent= "paper selected";
@@ -116,12 +160,21 @@ playBtn.addEventListener("click",function (){
                     if(turn===1){
                         if(computerPoint>userPoint){
                             document.getElementById("gr").textContent="computer Won the Match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else if(computerPoint==userPoint){
                             document.getElementById("gr").textContent="TIE match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else{
                             document.getElementById("gr").textContent="You Won!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                     }
                     turn--;
@@ -140,12 +193,21 @@ playBtn.addEventListener("click",function (){
                     if(turn===1){
                         if(computerPoint>userPoint){
                             document.getElementById("gr").textContent="computer Won the Match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else if(computerPoint==userPoint){
                             document.getElementById("gr").textContent="TIE match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else{
                             document.getElementById("gr").textContent="You Won!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                     }
                     turn--;
@@ -163,12 +225,21 @@ playBtn.addEventListener("click",function (){
                     if(turn===1){
                         if(computerPoint>userPoint){
                             document.getElementById("gr").textContent="computer Won the Match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else if(computerPoint==userPoint){
                             document.getElementById("gr").textContent="TIE match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else{
                             document.getElementById("gr").textContent="You Won!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                     }
                     turn--;
@@ -183,6 +254,9 @@ playBtn.addEventListener("click",function (){
     })
 // selected scissor as a user choice
     selectScissors.addEventListener("click",function(){
+        if(noOfTurns.value===0){
+            document.getElementById("rr").innerText="";
+        }
         document.getElementById("gameStarter").textContent="";
         if(turn>0){
             selectScissors.textContent= "scissor selected";
@@ -197,12 +271,21 @@ playBtn.addEventListener("click",function (){
                     if(turn===1){
                         if(computerPoint>userPoint){
                             document.getElementById("gr").textContent="computer Won the Match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else if(computerPoint==userPoint){
                             document.getElementById("gr").textContent="TIE match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else{
                             document.getElementById("gr").textContent="You Won!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                     }
                     turn--;
@@ -221,12 +304,21 @@ playBtn.addEventListener("click",function (){
                     if(turn===1){
                         if(computerPoint>userPoint){
                             document.getElementById("gr").textContent="computer Won the Match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else if(computerPoint==userPoint){
                             document.getElementById("gr").textContent="TIE match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else{
                             document.getElementById("gr").textContent="You Won!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                     }
                     turn--;
@@ -244,12 +336,22 @@ playBtn.addEventListener("click",function (){
                     if(turn===1){
                         if(computerPoint>userPoint){
                             document.getElementById("gr").textContent="computer Won the Match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
+                            
                         }
                         else if(computerPoint==userPoint){
                             document.getElementById("gr").textContent="TIE match!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                         else{
                             document.getElementById("gr").textContent="You Won!";
+                            document.getElementById("input").value="";
+                            document.getElementById("gameStarter").innerText="";
+                            document.getElementById("rr").textContent="";
                         }
                     }
                     turn--;
